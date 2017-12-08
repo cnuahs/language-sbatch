@@ -1,0 +1,18 @@
+'scopeName': 'sbatch.source.shell'
+'name': 'SBATCH Shell Script'
+'fileTypes': [
+  'sh'
+  'bash'
+  'sbatch'
+]
+'patterns': [
+  {
+    'begin': '#SBATCH'
+    'end': '$'
+    'name': 'cmd.sbatch.source.shell'
+  }
+
+  {
+    'include': 'source.shell'
+  }
+]
