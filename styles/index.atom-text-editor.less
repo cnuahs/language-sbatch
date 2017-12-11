@@ -1,5 +1,8 @@
+//@import "colors.less"
 atom-text-editor.editor {
   .syntax--cmd.syntax--sbatch.syntax--source.syntax--shell {
-    color: #aaaaaa;
+//    color: @syntax-text-color; // NOT in the default one-dark-syntax theme!?
+//    color: @syntax-fg; // NOT portable, need to '@import "colors.less"'
+    color: hsl(220,14%,71%); // matches the default one-dark-syntax theme
   }
 }
